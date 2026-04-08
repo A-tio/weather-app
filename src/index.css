@@ -1,20 +1,34 @@
 @import "tailwindcss";
 
+@theme {
+  --color-btncolor: var(--btncolor);
+  --color-btnselected: var(--btnselected);
+  --color-border: var(--border);
+  --color-text-muted: var(--text-muted);
+  --color-btnblue: var(--btnblue);
+}
+
 :root {
-  --text: #6b6375;
+  --text: hsl(0, 0%, 100%);
   --text-h: #08060d;
   --bg: hsl(243, 96%, 9%);
-  --border: #e5e4e7;
+  --border: hsl(243, 23%, 24%);
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
+  
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --btncolor:hsl(243, 27%, 20%);
+  --btnselected: hsl(243, 23%, 24%);
+  --btnblue: hsl(233, 67%, 56%);
+  --text-muted: #AEAEB7;
+
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --heading: 'Bricolage Grotesque', system-ui, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -28,16 +42,16 @@
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
+    --text: hsl(0, 0%, 100%);
     --text-h: #f3f4f6;
     --bg: hsl(243, 96%, 9%);
-    --border: #2e303a;
+    --border: hsl(243, 23%, 24%);
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
