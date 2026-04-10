@@ -5,7 +5,7 @@ import IconUnits from "../assets/images/icon-units.svg";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between py-8 px-4 items-center">
+    <div className="flex justify-between py-8  items-center">
       <img
         src={Logo}
         alt="Logo of Weather Now"
