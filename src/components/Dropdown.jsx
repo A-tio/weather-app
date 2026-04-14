@@ -41,7 +41,7 @@ function Dropdown({ title, icon1, icon2, type }) {
     <div className="relative inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex justify-center items-center gap-2 w-full rounded-md border border-0 p-2 bg-btncolor cursor-pointer"
+        className="inline-flex justify-center items-center gap-2 w-full rounded-md border border-0 p-2 bg-red-400 cursor-pointer"
       >
         <img src={icon1} className="w-3 h-auto" />
 
@@ -170,16 +170,10 @@ function Dropdown({ title, icon1, icon2, type }) {
 
           {/* --- DATES DROPDOWN --- */}
           {type === "date-dropdown" && (
-            <div className="bg-green-400 py-2 border-2 border-green-600 rounded-md">
-              <p className="px-4 pb-2 text-xs font-bold text-green-900 uppercase">
-                date Layout
-              </p>
+            <div className="bg-red-400">
+              <p className="">date Layout</p>
               {dates.map((date, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="block px-4 py-2 text-sm font-semibold text-green-900 hover:bg-green-500"
-                >
+                <a key={index} href="#" className="text-sm font-semibold ">
                   {date}
                 </a>
               ))}
