@@ -24,15 +24,20 @@ export default function Banner() {
   //   };
 
   return (
-    <div className="relative w-2/3 h-60 mx-6 lg:mx-0 flex flex-col items-center justify-center z-1 p-6">
+    <div className="relative w-full ">
+      <img
+        src={bgSmall}
+        alt="banner background small"
+        className="w-full h-full block md:hidden"
+      />
+
       <img
         src={bgLarge}
         alt="banner background"
-        className="absolute inset-0 w-full object-contain"
+        className="w-full hidden md:block"
       />
-
-      <div className="relative flex flex-col lg:flex-row justify-between lg:items-center w-full h-full">
-        <div className="flex flex-col gap-1 lg:items-start ">
+      <div className="absolute inset-0 z-10 flex flex-col md:flex-row justify-between items-center p-6">
+        <div className="flex flex-col gap-1 md:items-start ">
           <h2 className="!text-3xl">{place}</h2>
           <p>{datetime}</p>
         </div>
